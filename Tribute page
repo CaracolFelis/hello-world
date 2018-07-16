@@ -1,0 +1,92 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+<style>
+
+h1 {
+color: black;
+font-family: 'Montserrat', sans-serif;
+font-size: 2em;
+}
+
+h2 {
+color: black;
+font-family: 'Montserrat', sans-serif;
+font-size: 2em;
+}
+
+p {
+color: black;
+font-family: 'Open Sans', sans-serif;
+font-size: 16.8px;
+}
+
+#main {
+background-color: #c6d3df;
+border-radius: 20px;
+}
+
+#title {
+text-align: center;
+margin: 5em auto 5em auto;
+padding: 5em;
+line-height: 2em;
+}
+
+#img-div {
+background-color: white;
+}
+
+#img-div img {
+maxwidth: 60%;
+display: block;
+height: auto;
+}
+
+#img-caption {
+background-color: white;
+text-align: center;
+}
+
+</style>
+
+<body id="main">
+  <header>
+    <div id="title">
+      <h1>Stephen Hawking</h1>
+      <p>Cosmologist, space traveller and hero.</p>
+    </div>
+    <div id="img-div>
+        <img src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/03/Hawking_1300Lede_LessDeep1.jpg" alt="Photo of Stephen Hawking">
+      <div id="img-caption">
+        <p>Photo of Stephen Hawking in 1979 in Princeton, New Jersey.</p>
+      </div>
+    </div>
+  </header>
+
+  <article>
+    <h2>Prof Stephen Hawking has died aged 76. The Cambridge
+ theoretical physicist was one of the best-known scientists
+ in the world, but what about his discoveries?</h2>
+    <ul>
+      <li>With the Oxford mathematician Roger Penrose,
+ he showed that if there was a Big Bang,
+ it must have started from an infinitely small point - a singularity.</li>
+      <li>Black holes radiate energy known as Hawking radiation, while gradually losing mass.
+ This is due to quantum effects near the edge of the black hole, a region called the event horizon.</li>
+      <li>He predicted the existence of mini-black holes at the time of the Big Bang. These tiny black holes would have been incredibly hot,
+ shedding mass until they vanished - potentially ending their lives in a powerful explosion.</li>
+      <li>In the 70s, Hawking considered whether the particles and light entering a black hole were destroyed if the black hole evaporated. Hawking initially thought this "information" was lost from the Universe. But US physicist Leonard Susskind disagreed.
+ These ideas became known as the information paradox. In 2004, Hawking conceded that the information must be conserved.</li>
+      <li>With the physicist James Hartle, he tried to describe the history of the cosmos in one mathematical expression.
+ But quantum theory shows that the distinctions between space and time are unclear.
+ As a result, the proposal showed there was little point asking what happened before the Big Bang.</li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><q>Stephen Hawking was a defining force in the world of science whose loss will be felt in every corner of the globe.
+ I was sad that we didn’t agree on everything, but he was still a hero to me as one of our greatest ever thinkers -
+ he inspired with his courage as well as his words.</q Jeremy Hunt>
+    <p>If you have time, you should read more about this incredible human being on his<a href="#">Wikipedia entry</a>.</p>
+  </footer>
+</body>
