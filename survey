@@ -1,0 +1,256 @@
+<head>
+body {
+background-color:#336b87;
+}
+
+#header {
+position:sticky;
+top: 0;
+text-align: center;
+background-color: #90afc5;
+width: 75%;
+margin-right: auto;
+margin-left: auto;
+padding: 10px;
+border-radius: 4px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+
+}
+
+#survey-form {
+background-color: #90afc5;
+width: 75%;
+padding-top: 15px;
+margin-right: auto;
+margin-left: auto;
+font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+font-size: 16px;
+}
+
+#title{
+font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+font-size: 34px;
+color: #763626;
+}
+
+#description {
+font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+font-size: 20px;
+color: #2a3132;
+}
+
+.small-input {
+width:200px;
+height: 1.8em;
+}
+
+.large-input {
+width:400px;
+height: 3.2em;
+}
+
+.left {
+width: 48%;
+float: left;
+text-align: right;
+}
+
+.right {
+width: 50%;
+float: right;
+}
+
+#submit {
+border-radius: 3px;
+padding:5px;
+text-align: center;
+width: 40%;
+margin-left: 30%;
+margin-right: 30%
+margin-top: 30px;
+margin-bottom: 10px;
+}
+</head>
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+
+
+<body>
+<div id="header" class="shadow">
+  <h1 id="title">Reading survey</h1>
+  <p id="description" >Let us give you the best reading recommendations</p>
+</div>
+<form id="survey-form">
+
+  <fieldset>
+  <div class = "left">
+    <label for="name" id="name-label">Name</label>
+  </div>
+  <div class = "right">
+    <input id="name" class="small-input" type="text" name="name" placeholder="Enter your name" required>
+  </div>
+  </fieldset>
+
+  <fieldset>
+  <div class = "left">
+    <label for="age" id="number-label">Age</label>
+  </div>
+  <div class = "right">
+    <input id="number" class="small-input" type="number" name="age" placeholder="Enter your age" min="1" max="100" required>
+  </div>
+  </fieldset>
+
+  <fieldset>
+  <div class = "left">
+    <label for="email" id="email-label">Email adress</label>
+  </div>
+  <div class = "right">
+    <input id="email" class="small-input" type="email" name="email" placeholder="Enter your email" required>
+  </div>
+  </fieldset>
+
+  <fieldset>
+  <div class = "left">
+    <label for="dropdown">What is your gender?</label>
+  </div>
+  <div class = "right">
+    <select id="dropdown" name="dropdown" class="small-input">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  </fieldset>
+  <fieldset>
+  <div class = "left">
+    <label for="persontype">Which of these words best describes you?</label><br>
+  </div>
+  <div class = "right">
+      <label>
+        <input type="radio" name="persontype" value="Snob">Literary Snob
+      </label><br>
+      <label>
+        <input type="radio"name="persontype" value="Series">Series fanatic
+      </label><br>
+      <label>
+        <input type="radio" name="persontype" value="Juggler">The Book Juggler
+      </label><br>
+      <label>
+        <input type="radio" name="persontype" value="physical-books">The <q>physical books only</q> reader
+      </label><br>
+      <label>
+      <input type="radio" name="persontype" value="Non-Fiction">Non-Fiction Enthusiast
+      </label><br>
+      <label>
+      <input type="radio" name="persontype" value="Re-Reader">The Re-Reader
+      </label><br>
+      <label>
+      <input type="radio" name="persontype" value="Fiction">Fiction lover
+      </label> 
+  </div>
+  </fieldset>
+
+  <fieldset>
+  <div class = "left">
+    <label for="interests">Choose one or more interests:</label><br>
+  </div>
+  <div class = "right">
+      <label>
+      <input type="checkbox" name="interests" value="Arts-Photography">Arts & Photography
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Biographies-Memoirs">Biographies & Memoirs
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Business-Money">Business & Money
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Children">Children's Books
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Christian">Christian Books & Bibles
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Comics">Comics & Graphic Novels
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Computers">Computers & Technology
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Cookbooks">Cookbooks, Food & Wine
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Crafts">Crafts, Hobbies & Home
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Education">Education & Teaching
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Engineering">Engineering & Transportation
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Health">Health, Fitness & Dieting
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="History">History
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Humor">Humor & Entertainment
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Law">Law
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Medical">Medical Books
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Mystery">Mystery, Thriller & Suspense
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Parenting">Parenting & Relationships
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Politics">Politics & Social Sciences
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Religion">Religion & Spirituality
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Science">Science & Math
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Sports">Sports & Outdoors
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Textbooks">Textbooks
+      </label><br>
+      <label>
+      <input type="checkbox" name="interests" value="Travel">Travel
+      </label><br>
+  </div>
+  </fieldset>
+
+  <fieldset>
+  <div class = "left">
+    <label for"suggestions">Leave any additional comments here:</label>
+  </div>
+  <div class = "right">
+    <textarea name="suggestions" id="textarea" placeholder="Enter your suggestions here" class = "large-input">
+    </textarea>
+  </div>
+  </fieldset>
+
+  <fieldset>
+<button type="submit" id="submit">Submit</button>
+  </fieldset>
+
+</form>
+</body>
+</html>
